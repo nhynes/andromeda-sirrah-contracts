@@ -16,7 +16,7 @@ contract Andromeda is IAndromeda, DcapDemo {
     address public constant SEALINGKEY_ADDR = 0x0000000000000000000000000000000000040704;
     address public constant SHA512_ADDR = 0x0000000000000000000000000000000000050700;
     address public constant DO_HTTP_REQUEST = 0x0000000000000000000000000000000043200002;
-    address public constant X509_GENERATE_ADDR = 0x0000000000000000000000000000000000060700;
+    address public constant X509_GENERATE_ADDR = 0x0000000000000000000000000000000000070700;
 
     function volatileSet(bytes32 key, bytes32 value) external override {
         bytes memory cdata = abi.encodePacked([key, value]);
